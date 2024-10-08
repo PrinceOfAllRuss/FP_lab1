@@ -1,7 +1,7 @@
 (ns problem-25.tail)
 
 (defn len [n] (count (str n)))
-(defn thousand-digit_fibonacci_number [a b acc index]
-  (if (= (len acc) 1000)
+(defn thousand-digit_fibonacci_number [a b index length]
+  (if (= (len (+ a b)) length)
     index
-    (recur b (+ a b) (+ a b) (inc index))))
+    (recur b (+ a b) (inc index) length)))
