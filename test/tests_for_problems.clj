@@ -22,11 +22,11 @@
   (is (= (lazy/thousand-digit_fibonacci_number 3) 12)))
 
 (deftest test-problem-25-recursion-with-100
-  (is (= (recursion/thousand-digit_fibonacci_number 1M 1M 100) 476)))
+  (is (= (recursion/thousand-digit_fibonacci_number 100) 476)))
 (deftest test-problem-25-recursion-with-3
-  (is (= (recursion/thousand-digit_fibonacci_number 1M 1M 3) 12)))
+  (is (= (recursion/thousand-digit_fibonacci_number 3) 12)))
 
 (deftest test-problem-25-tail-with-1000
-  (is (= (tail/thousand-digit_fibonacci_number 1M 1M 3 1000) 4782)))
+  (is (= (tail/thousand-digit_fibonacci_number 1000) 4782)))
 (deftest test-problem-25-tail-with-3
-  (is (= (tail/thousand-digit_fibonacci_number 1M 1M 3 3) 12)))
+  (is (= (tail/thousand-digit_fibonacci_number 3) 12)))
